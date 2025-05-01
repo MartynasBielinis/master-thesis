@@ -1,0 +1,27 @@
+mintpy.compute.cluster   = local
+mintpy.load.processor        = hyp3
+
+mintpy.load.unwFile          = .../hyp3/*/*_unw_phase_clipped.tif
+mintpy.load.corFile          = .../hyp3/*/*_corr_clipped.tif
+mintpy.load.connCompFile     = .../hyp3/*/*_conncomp_clipped.tif
+
+mintpy.load.demFile          = .../hyp3/*/*_dem_clipped.tif
+mintpy.load.incAngleFile     = .../hyp3/*/*_lv_theta_clipped.tif
+mintpy.load.azAngleFile      = .../hyp3/*/*_lv_phi_clipped.tif
+mintpy.load.waterMaskFile    = .../hyp3/*/*_water_mask_clipped.tif
+
+mintpy.subset.lalo          = 55.2075:55.35657,20.86711:21.09556   #[S:N,W:E / no], auto for no
+
+mintpy.network.coherenceBased  = yes
+mintpy.network.aoiLALO         = 55.2872:55.29424,20.98703:20.99444
+
+mintpy.reference.lalo          = 55.26431,20.96916
+mintpy.reference.maskFile      = no
+
+mintpy.unwrapError.method          = bridging
+mintpy.unwrapError.connCompMinArea = 20
+mintpy.unwrapError.numSample       = 20
+
+mintpy.networkInversion.maskDataset   = connectComponent
+
+mintpy.deramp          = quadratic  
